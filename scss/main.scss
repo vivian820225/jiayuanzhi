@@ -1,0 +1,196 @@
+@font-face {
+  font-family: "ShueiMin-L";
+  src: url(../fonts/A-OTF-ShueiMinPr6-L.otf);
+}
+
+@font-face {
+  font-family: "ShueiMin-M";
+  src: url(../fonts/A-OTF-ShueiMinPr6-M.otf);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "ShueiMin-M", "微軟正黑體", "Microsoft JhengHei", "Century Gothic",
+    CenturyGothic, AppleGothic, sans-serif;
+  max-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../images/bk.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    z-index: -1;
+  }
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  user-select: none;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}  
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.title {
+  font-family: "ShueiMin-M", "微軟正黑體", "Microsoft JhengHei", "Century Gothic",
+    CenturyGothic, AppleGothic, sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.2;
+  white-space: nowrap;
+  color: #4B3829;
+
+  &.writing-vertical {
+    writing-mode: vertical-rl;
+    line-height: 1.4;
+    letter-spacing: 6px;
+  }
+}
+
+.sub-title {
+  font-family: "ShueiMin-M", "微軟正黑體", "Microsoft JhengHei", "Century Gothic",
+    CenturyGothic, AppleGothic, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #4B3829;
+
+  &.writing-vertical {
+    writing-mode: vertical-rl;
+    line-height: 1.4;
+    letter-spacing: 6px;
+  }
+}
+
+.para {
+  font-family: "ShueiMin-L", "微軟正黑體", "Microsoft JhengHei", "Century Gothic",
+    CenturyGothic, AppleGothic, sans-serif;
+  font-size: 17px;
+  line-height: 1.8;
+  text-align: justify;
+  color: #4B3829;
+
+  &.writing-vertical {
+    writing-mode: vertical-rl;
+    line-height: 2;
+    letter-spacing: 6px;
+  }
+
+  .bold  {
+    font-family: "ShueiMin-M", "微軟正黑體", "Microsoft JhengHei", "Century Gothic",
+    CenturyGothic, AppleGothic, sans-serif;
+    font-weight: bold;
+  }
+}
+
+
+
+.writing-horizontal {
+  writing-mode: horizontal-tb;
+}
+
+
+@media (max-width: 768px) {
+  .d-md-none {
+    display: none !important;
+  }
+
+  .d-md-block {
+    display: block !important;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .d-md-flex {
+    display: flex !important;
+    
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .d-md-inline {
+    display: inline-block !important;
+  }
+
+  .title {
+    font-size: 26px;
+  }
+
+  .sub-title {
+    font-size: 18px;
+  }
+
+  .para {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
+
+
+@media (max-width: 520px) {
+  .title {
+    font-size: 20px;
+  }
+
+  .sub-title {
+    font-size: 15px;
+  }
+
+  .para {
+    font-size: 13px;
+  }
+}
+
+
+@import "_swiper.scss";
+@import "_section.scss";
+@import "_reservation.scss";
