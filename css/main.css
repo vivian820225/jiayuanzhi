@@ -980,6 +980,9 @@ img {
   .sec6 .img-title img {
     max-width: 20px;
   }
+  .sec6 .sub-title.md {
+    font-size: 15px;
+  }
   .sec6 .designer {
     font-size: 15px;
   }
