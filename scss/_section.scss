@@ -11,13 +11,26 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  padding: 3rem 0 0 4rem;  
+  padding: 3rem 0 0 4rem;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 100vw;
+    height: 15%;
+    background-color: #D7C8BF;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  }
 
   .logo-1 {
     width: 40vw;
     max-width: 680px;
     position: absolute;
-    top: 8rem;
+    top: 20%;
     left: 4rem;
   }
 
@@ -35,6 +48,7 @@
 
   .main-img-wrapper {
     position: relative;
+    transform: translateX(5vw);
   }
 
   .main-img {
@@ -43,9 +57,9 @@
 
   .main-swing {
     position: absolute;
-    max-width: 8vw;
-    left: calc(30% + 4vw);
-    bottom: calc(12% + 4vw);
+    max-width: 7vw;
+    left: calc(25% + 4vw);
+    bottom: calc(9% + 4vw);
     animation: swing;
     animation-duration: 4s;
     animation-iteration-count: infinite;
@@ -69,20 +83,28 @@
 
     .logo-3 {
       width: 120px;
-      margin-right: 2rem;
+      margin-right: 1rem;
+      margin-bottom: 1rem;
     }
   }
 }
 
 @media screen and (max-width: 768px) {
   .sec0 {
+    flex-direction: column-reverse;
     align-items: center;
     padding: 2rem 0 0 0;
 
+    &::after {
+      max-height: 72px;
+    }
+
     .logo-1 {
-      width: 50vw;
-      top: 2rem;
-      left: 2rem;
+      position: relative;
+      width: 70vw;
+      max-width: 480px;
+      top: initial;
+      left: initial;
     }
 
     .logo-2 {
@@ -97,14 +119,16 @@
 
     .logo-3 {
       position: absolute;
-      top: 2rem;
-      right: 2rem;
+      bottom: 1rem;
+      right: 1rem;
       margin-right: 0;
+      margin-bottom: 0;
     }
 
     .main-img-wrapper {
-      margin-top: 4rem;
-      align-self: flex-end;
+      margin-top: 1rem;
+      align-self: center;
+      transform: translateX(-4vw);
     }
 
     .main-img {
@@ -115,12 +139,18 @@
 
 @media screen and (max-width: 520px) {
   .sec0 {
+    &::after {
+      max-height: 40px;
+    }
+
     .logo-2 {
       margin-top: initial;
     }
 
     .logo-3 {
-      max-width: 80px;
+      max-width: 60px;
+      right: 0.5rem;
+      bottom: 0.5rem;
     }
   }
 }
@@ -606,6 +636,13 @@
   }
 }
 
+@media screen and (max-width: 320px) {
+  .sec5 {
+    .title:first-of-type {
+      margin-left: 0;
+    }
+  }
+}
 
 .sec6 {
   padding: 4rem 0 0 0;
@@ -818,6 +855,15 @@
   }
 }
 
+@media screen and (max-width: 320px) {
+  .sec6 {
+    .swing {
+      max-width: 80px;
+      right: 2rem;
+    }
+  }
+}
+
 .sec7 {
   .swiper {
     width: 1280px;
@@ -979,6 +1025,23 @@
     .img-2 {
       max-width: 120px;
       bottom: -2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .sec8 {
+    .title {
+      margin-left: 0;
+    }
+    
+    .sub-title {
+      margin-left: 0.5rem;
+    }
+
+    .img-2 {
+      max-width: 80px;
+      bottom: -2.8rem;
     }
   }
 }

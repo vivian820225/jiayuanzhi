@@ -30,9 +30,11 @@
                <img class="main-img" src="images/s0/main-img.png" alt="佳元植">
                <img class="main-swing" src="images/s0/swing.png" alt="佳元植">
            </div>
-           <img class="logo-1" src="images/s0/logo-1.png" alt="寫給板橋人的百年家書">
-           <img class="logo-2" src="images/s0/logo-2.png" alt="佳元植">
-           <img class="logo-3" src="images/s0/logo-3.jpg" alt="海宇國際">
+            <picture class="logo">
+                <source srcset="images/s0/main-logo.png" media="(min-width: 768px) and (orientation: landscape)">
+                <source srcset="images/s0/main-logo-m.png" media="(max-width: 768px) and (orientation: portrait)">
+                <img class="logo-1" src="images/s0/main-logo.png" alt="佳元植">
+            </picture>
        </div>
    
        <div class="sec1">
@@ -299,12 +301,6 @@
            </div>
        </div>
     </main>
-
-    <!-- <picture class="img-bg">
-        <source srcset="images/s0/bg.jpg" media="(min-width: 768px) and (orientation: landscape)">
-        <source srcset="images/s0/m-bg.jpg" media="(max-width: 768px) and (orientation: portrait)">
-        <img src="images/s0/bg.jpg" alt="background">
-    </picture> -->
 
 
     <script src="js/jquery.min.js"></script>
