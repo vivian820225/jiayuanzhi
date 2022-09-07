@@ -35,6 +35,8 @@ const dragContainer = document.querySelector('.horizontal-scroll-container')
 ImgObserver.observe(dragContainer, {box: "border-box"});
 
 $(document).ready(function () {
+  AOS.init();
+  
   const swiper1 = new Swiper('#sec2-swiper', {
     loop: true,
     autoplay: {
