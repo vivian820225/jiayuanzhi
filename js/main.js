@@ -1,3 +1,39 @@
+let timer = null
+let callback = ([entry]) => {
+    const toast = document.querySelector('.toast')
+    if (entry.isIntersecting) {
+      toast.classList.add('active')
+      timer = setTimeout(() => {
+        toast.classList.remove('active')
+       }, 5 * 1000);
+      return
+    }
+    clearTimeout(timer)
+    toast.classList.remove('active')
+}
+
+const options = { threshold: 0 }
+
+const observer = new IntersectionObserver(callback, options)
+
+const section = document.querySelector('.sec4')
+observer.observe(section)
+
+function initPositionImg() {
+  const dragImg = document.querySelector('.scroll-img')
+  const positionLeft = dragImg.clientWidth / 2 - dragContainer.clientWidth / 2
+  dragContainer.scrollLeft = positionLeft
+}
+
+const ImgObserver = new ResizeObserver(([entry]) => {
+  if (entry && entry.target) {
+    initPositionImg()
+  }
+});
+
+const dragContainer = document.querySelector('.horizontal-scroll-container')
+ImgObserver.observe(dragContainer, {box: "border-box"});
+
 $(document).ready(function () {
   const swiper1 = new Swiper('#sec2-swiper', {
     loop: true,

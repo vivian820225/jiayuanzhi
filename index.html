@@ -19,7 +19,6 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/main.min.css" media="all" />
-
 </head>
 
 <body>
@@ -114,7 +113,10 @@
        </div>
    
        <div class="sec4">
-           <img class="main-img" src="images/s4/img.jpg" alt="雙捷交匯 新板對坐">
+            <div class="dragscroll horizontal-scroll-container">
+                <img class="scroll-img" src="images/s4/img.jpg" data-width="3190" data-height="1080" alt="全景圖" />
+            </div>
+            <div class="toast">可以左右滾動</div>
        </div>
    
        <div class="sec5">
@@ -305,6 +307,7 @@
     <script src="js/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/dragScroll.js"></script>
     <script src="js/main.js"></script>
 
     <!-- Customized JavaScript -->
