@@ -49,6 +49,10 @@ img {
   user-select: none;
 }
 
+.relative {
+  position: relative;
+}
+
 .d-none {
   display: none;
 }
@@ -131,6 +135,25 @@ img {
 
 .writing-horizontal {
   writing-mode: horizontal-tb;
+}
+
+.img-tag {
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+  color: #FFF;
+  font-size: 0.75rem;
+
+  &.right {
+    left: initial;
+    right: 1rem;
+  }
+}
+
+@media (min-width: 821px) {
+  .img-tag {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 920px) {

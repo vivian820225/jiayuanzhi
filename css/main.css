@@ -50,6 +50,10 @@ img {
           user-select: none;
 }
 
+.relative {
+  position: relative;
+}
+
 .d-none {
   display: none;
 }
@@ -144,6 +148,23 @@ img {
           writing-mode: horizontal-tb;
 }
 
+.img-tag {
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+  color: #FFF;
+  font-size: 0.75rem;
+}
+.img-tag.right {
+  left: initial;
+  right: 1rem;
+}
+
+@media (min-width: 821px) {
+  .img-tag {
+    font-size: 1rem;
+  }
+}
 @media (max-width: 920px) {
   .d-lg-none {
     display: none !important;
@@ -281,146 +302,9 @@ img {
 }
 
 .sec0 {
-  width: 100%;
-  max-width: 100%;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  padding: 3rem 0 0 4rem;
-}
-.sec0::after {
-  content: "";
-  display: block;
-  width: 100vw;
-  height: 15%;
-  background-color: #D7C8BF;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: -1;
-}
-.sec0 .logo-1 {
-  width: 40vw;
-  max-width: 680px;
-  position: absolute;
-  top: 20%;
-  left: 4rem;
-}
-.sec0 .logo-2 {
-  width: 50vw;
-  max-width: 820px;
-  position: absolute;
-  bottom: 0;
-  left: 4rem;
-}
-.sec0 .logo-3 {
-  margin-right: 4rem;
-}
-.sec0 .main-img-wrapper {
-  position: relative;
-  -webkit-transform: translateX(5vw);
-          transform: translateX(5vw);
-}
-.sec0 .main-img {
-  width: 80vw;
-}
-.sec0 .main-swing {
-  position: absolute;
-  max-width: 7vw;
-  left: calc(25% + 4vw);
-  bottom: calc(9% + 4vw);
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-  z-index: -1;
 }
 
-@media screen and (max-width: 1024px) {
-  .sec0 {
-    padding-top: 2rem;
-  }
-  .sec0 .main-img {
-    width: 70vw;
-  }
-  .sec0 .logo-1 {
-    width: 35vw;
-    top: 4rem;
-  }
-  .sec0 .logo-3 {
-    width: 120px;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
-  }
-}
-@media screen and (max-width: 768px) {
-  .sec0 {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 2rem 0 0 0;
-  }
-  .sec0::after {
-    max-height: 72px;
-  }
-  .sec0 .logo-1 {
-    position: relative;
-    width: 70vw;
-    max-width: 480px;
-    top: initial;
-    left: initial;
-  }
-  .sec0 .logo-2 {
-    width: auto;
-    max-width: calc(100vw - 4rem);
-    margin: 0 auto;
-    margin-top: -2.5rem;
-    position: relative;
-    left: initial;
-    bottom: initial;
-  }
-  .sec0 .logo-3 {
-    position: absolute;
-    bottom: 1rem;
-    right: 1rem;
-    margin-right: 0;
-    margin-bottom: 0;
-  }
-  .sec0 .main-img-wrapper {
-    margin-top: 1rem;
-    -ms-flex-item-align: center;
-        align-self: center;
-    -webkit-transform: translateX(-4vw);
-            transform: translateX(-4vw);
-  }
-  .sec0 .main-img {
-    width: 90vw;
-  }
-}
-@media screen and (max-width: 520px) {
-  .sec0::after {
-    max-height: 40px;
-  }
-  .sec0 .logo-2 {
-    margin-top: initial;
-  }
-  .sec0 .logo-3 {
-    max-width: 60px;
-    right: 0.5rem;
-    bottom: 0.5rem;
-  }
-}
 .sec1 {
   position: relative;
   padding: 0 2rem;
@@ -743,50 +627,6 @@ img {
 .sec4 {
   position: relative;
   margin: 8rem auto;
-}
-.sec4 .horizontal-scroll-container {
-  width: 100%;
-  max-width: 100%;
-  max-height: 100vh;
-  overflow-y: hidden;
-  overflow-x: auto;
-}
-.sec4 .horizontal-scroll-container::-webkit-scrollbar {
-  display: none;
-}
-.sec4 .horizontal-scroll-container .scroll-img {
-  max-width: initial;
-  max-height: 100vh;
-}
-.sec4 .toast {
-  padding: 8px 16px;
-  font-size: 13px;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  border-radius: 8px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
-  -webkit-transition: opacity 0.2s ease;
-  transition: opacity 0.2s ease;
-  z-index: 100;
-  opacity: 0;
-}
-.sec4 .toast.active {
-  opacity: 1;
 }
 
 @media screen and (max-width: 768px) {

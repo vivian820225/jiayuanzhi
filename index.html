@@ -25,15 +25,11 @@
     <main class="main">
         <!-- 主視覺 -->
        <div class="sec0">
-           <div class="main-img-wrapper">
-               <img class="main-img" src="images/s0/main-img.png" alt="佳元植">
-               <img class="main-swing" src="images/s0/swing.gif" alt="佳元植">
-           </div>
-            <picture class="logo">
-                <source srcset="images/s0/main-logo.png" media="(min-width: 768px) and (orientation: landscape)">
-                <source srcset="images/s0/main-logo-m.png" media="(max-width: 768px) and (orientation: portrait)">
-                <img class="logo-1" src="images/s0/main-logo.png" alt="佳元植">
-            </picture>
+          <picture>
+              <source srcset="images/s0/main.jpg" media="(min-width: 768px) and (orientation: landscape)">
+              <source srcset="images/s0/main-m.jpg" media="(max-width: 768px) and (orientation: portrait)">
+              <img class="banner" src="images/s0/main.jpg" alt="佳元植">
+          </picture>
        </div>
    
        <div class="sec1">
@@ -120,10 +116,11 @@
        </div>
    
        <div class="sec4">
-            <div class="dragscroll horizontal-scroll-container">
-                <img class="scroll-img" src="images/s4/img.jpg" data-width="3190" data-height="1080" alt="全景圖" />
-            </div>
-            <div class="toast">可以左右滾動</div>
+          <picture>
+            <source srcset="images/s4/img.jpg" media="(min-width: 768px) and (orientation: landscape)">
+            <source srcset="images/s4/img-m.jpg" media="(max-width: 768px) and (orientation: portrait)">
+            <img class="banner" src="images/s4/img.jpg" alt="佳元植">
+          </picture>
        </div>
    
        <div class="sec5">
@@ -162,12 +159,47 @@
        <div class="sec6">
            <div class="section">
                <div class="d-none d-md-flex">
-                   <img class="img-work img-1" data-aos="fade-left" data-aos-duration="1000" src="images/s6/img-1.jpg" alt="建築師 陳克聚">
+                  <div id="sec6-swiper" class="swiper img-work img-1" data-aos="fade-left" data-aos-duration="1000"
+                    src="images/s6/img-1.jpg">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img class="slide-img" src="images/s6/img-1-1.jpg" alt="國美國家美術館">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="slide-img" src="images/s6/img-1-2.jpg" alt="頂禾園">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="slide-img" src="images/s6/img-1-3.jpg" alt="國美信義花園">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="slide-img" src="images/s6/img-1-4.jpg" alt="勤耕延吉">
+                      </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                  </div>
                    <div class="img-title">
                        <img src="images/s6/title-1-v.png" alt="ARCHITECTURE">
                    </div>
                </div>
-               <img class="img-work img-1 d-md-none" data-aos="fade-left" data-aos-duration="1000" src="images/s6/img-1.jpg" alt="建築師 陳克聚">
+              <div id="sec6-swiper" class="swiper img-work img-1 d-md-none" data-aos="fade-left" data-aos-duration="1000" src="images/s6/img-1.jpg">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img class="slide-img" src="images/s6/img-1-1.jpg" alt="國美國家美術館">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="slide-img" src="images/s6/img-1-2.jpg" alt="頂禾園">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="slide-img" src="images/s6/img-1-3.jpg" alt="國美信義花園">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="slide-img" src="images/s6/img-1-4.jpg" alt="勤耕延吉">
+                  </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
                <div class="content-wrapper">
                    <div class="img-title d-md-none">
                        <img src="images/s6/title-1.png" alt="ARCHITECTURE">
@@ -184,8 +216,8 @@
                        </p>
                        <p class="sub-title md">業績</p>
                        <p class="para">
-                           ｜頂禾園｜新美齊心居｜勤耕延吉｜<br/>
-                           ｜國美信義花園｜國美隱哲｜國美華爾道夫｜
+                          ｜頂禾園｜國美信義花園｜國美隱哲｜<br/>
+                          ｜國美華爾道夫｜國美國家美術館｜勤耕延吉｜
                        </p>
                    </div>
                </div>
@@ -315,7 +347,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="js/dragScroll.js"></script>
     <script src="js/main.js"></script>
 
     <!-- Customized JavaScript -->
