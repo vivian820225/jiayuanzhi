@@ -35,6 +35,24 @@ const swiper3 = new Swiper('#sec3-swiper', {
   breakpoints: {},
 });
 
+const swiper5 = new Swiper('#sec5-swiper', {
+  loop: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  
+  pagination: {
+    el: "#sec5-swiper .swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '#sec5-swiper .swiper-button-next',
+    prevEl: '#sec5-swiper .swiper-button-prev',
+  },
+  breakpoints: {},
+});
+
 const swiper6 = new Swiper('#sec6-swiper', {
   loop: true,
   autoplay: {
