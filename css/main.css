@@ -1205,8 +1205,7 @@ img {
   }
 }
 .reservation {
-  background: url(../images/s8/form-bg.jpg) center center;
-  background-size: cover;
+  padding: 17px;
 }
 .reservation .d-flex {
   padding: 8rem 4rem 6rem 4rem;
@@ -1217,124 +1216,78 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
 }
-
-.intro {
-  margin-right: 2rem;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 40%;
-          flex: 1 1 40%;
-  max-width: 480px;
-}
-.intro a {
-  color: #fff;
-}
-
-.table-wrapper {
-  color: #fff;
-}
-.table-wrapper .table {
-  margin-bottom: 2rem;
-}
-.table-wrapper .title {
-  font-size: 30px;
-  margin-bottom: 1rem;
-  color: #fff;
-}
-.table-wrapper .table > thead > tr > th {
-  padding: 0;
-  border: none;
-}
-.table-wrapper .table > tbody > tr > td {
-  padding: 4px 0;
-  font-size: 18px;
-  font-weight: bold;
-  border: none;
-}
-
-.call-to-action {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 60%;
-          flex: 1 1 60%;
-  max-width: 710px;
-}
-
-.form-wrapper {
+.reservation .form-wrapper {
   max-width: 710px;
   margin: 0 auto;
   padding-bottom: 2rem;
 }
-.form-wrapper .form-control-wrapper {
+.reservation .form-wrapper .form-control-wrapper {
   margin-bottom: 4rem;
 }
-.form-wrapper .form-control {
-  height: 70px;
+.reservation .form-wrapper .form-control {
+  height: 56px;
 }
-.form-wrapper .d-flex {
+.reservation .form-wrapper .d-flex {
   padding: 0;
 }
-.form-wrapper .d-flex .form-control {
+.reservation .form-wrapper .d-flex .form-control {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   margin-bottom: 0;
   margin-right: 16px;
 }
-
-.form-title {
+.reservation .form-title {
   margin-bottom: 2rem;
-  color: #fff;
+  color: #4b3829;
   font-weight: bold;
-  text-align: left;
+  text-align: center;
 }
-
-.form-control {
+.reservation .form-control {
   height: auto;
   margin-bottom: 1rem;
   font-size: 1rem;
   background-color: transparent;
-  border: 1px solid #fff;
+  border: 1px solid #4b3829;
   border-radius: initial;
-  color: #fff;
+  color: #4b3829;
   padding: 8px 20px 8px 12px;
 }
-.form-control::-webkit-input-placeholder {
-  color: #fff;
+.reservation .form-control::-webkit-input-placeholder {
+  color: #4b3829;
 }
-.form-control::-moz-placeholder {
-  color: #fff;
+.reservation .form-control::-moz-placeholder {
+  color: #4b3829;
 }
-.form-control:-ms-input-placeholder {
-  color: #fff;
+.reservation .form-control:-ms-input-placeholder {
+  color: #4b3829;
 }
-.form-control::-ms-input-placeholder {
-  color: #fff;
+.reservation .form-control::-ms-input-placeholder {
+  color: #4b3829;
 }
-.form-control::placeholder {
-  color: #fff;
+.reservation .form-control::placeholder {
+  color: #4b3829;
 }
-
-.policy {
+.reservation .policy {
   margin-bottom: 1rem;
-  color: #fff;
+  color: #4b3829;
   line-height: 1.5;
 }
-
-.form-check-label {
+.reservation .form-check-label {
   margin-bottom: 1.5rem;
-  color: #fff;
+  color: #4b3829;
   font-weight: normal;
   cursor: pointer;
 }
-.form-check-label a {
+.reservation .form-check-label a {
   padding-left: 4px;
-  color: #fff;
+  color: #4b3829;
   font-weight: bold;
 }
-.form-check-label a:hover {
+.reservation .form-check-label a:hover {
   text-decoration: underline;
 }
-
-.btn {
+.reservation .btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1347,25 +1300,24 @@ img {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  height: 70px;
-  color: #fff;
+  height: 56px;
+  color: #FFF;
   border-radius: initial;
-  background-color: #B3B4B5;
+  background-color: #1a340b;
   font-size: 18px;
   font-weight: bold;
   -webkit-transition: all 0.1s ease-in;
   transition: all 0.1s ease-in;
   cursor: pointer;
 }
-.btn:hover {
-  color: #B3B4B5;
-  background-color: #fff;
+.reservation .btn:hover {
+  color: #1a340b;
+  background-color: #4b3829;
 }
-
-.btn-secondary {
-  height: 70px;
-  color: #fff;
-  background-color: #B3B4B5;
+.reservation .btn-secondary {
+  height: 56px;
+  color: #FFF;
+  background-color: #1a340b;
   border: 0;
   border-radius: initial;
   font-weight: bold;
@@ -1383,34 +1335,6 @@ img {
             align-items: center;
     max-width: 680px;
     margin: 0 auto;
-  }
-  .reservation .intro {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 100%;
-            flex: 1 1 100%;
-    width: 100%;
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  .reservation .call-to-action {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 100%;
-            flex: 1 1 100%;
-  }
-  .reservation .table-wrapper .table {
-    margin-bottom: 1rem;
-  }
-  .reservation .table-wrapper .title {
-    font-size: 22px;
-    text-align: left;
-  }
-  .reservation .table-wrapper .table > thead > tr > th {
-    padding: 0;
-  }
-  .reservation .table-wrapper .table > tbody > tr > td {
-    font-size: 16px;
-    padding: 0 0 1rem 0;
   }
   .reservation .form-wrapper {
     max-width: 680px;
@@ -1431,71 +1355,39 @@ img {
   }
 }
 @media (max-width: 768px) {
-  .reservation {
-    background: url(../images/s8/m-form-bg.jpg) center center;
-  }
   .reservation .d-flex {
     padding: 2rem 0;
   }
-  .reservation .intro {
-    padding: 0 15px;
-  }
-  .form-wrapper .form-control-wrapper {
+  .reservation .form-wrapper .form-control-wrapper {
     margin-bottom: 0;
   }
-  .form-wrapper .form-control,
-.form-wrapper .btn,
-.form-wrapper .btn-secondary {
+  .reservation .form-wrapper .form-control,
+.reservation .form-wrapper .btn,
+.reservation .form-wrapper .btn-secondary {
     height: 56px;
   }
 }
 @media (max-width: 480px) {
-  .reservation .intro {
-    padding: 0 15px;
-  }
-  .form-title {
+  .reservation .form-title {
     margin: 0;
     margin-bottom: 1rem;
     font-size: 22px;
   }
-  .form-control {
+  .reservation .form-control {
     margin-bottom: 0.5rem;
   }
-  .form-control,
-.btn,
-.btn-secondary {
+  .reservation .form-control,
+.reservation .btn,
+.reservation .btn-secondary {
     font-size: 15px;
   }
-  .policy {
+  .reservation .policy {
     margin-bottom: 8px;
     font-size: 12px;
     letter-spacing: -1px;
   }
-  .form-check-label {
+  .reservation .form-check-label {
     margin-bottom: 12px;
     font-size: 12px;
-  }
-}
-.google-map {
-  max-width: 100%;
-  height: 30vh;
-  max-height: 200px;
-  margin-bottom: 2rem;
-  position: relative;
-}
-.google-map iframe {
-  width: 100%;
-  max-width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
-@media (max-width: 768px) {
-  .google-map {
-    margin-bottom: 2rem;
   }
 }/*# sourceMappingURL=main.css.map */

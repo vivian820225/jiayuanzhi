@@ -353,29 +353,88 @@
                </p>
            </div>
        </div>
+
+        <!-- 基本資料 立即預約 -->
+        <section class="reservation" id="formtable">
+          <div class="container form-wrapper">
+            <div class="row">
+              <div class="col-md-12 mx-auto">
+                <h2 class="mb-4 form-title">立即預約</h2>
+              </div>
+              <div class="col-md-12 mx-auto">
+                <form>
+                  <div class="row form-control-wrapper">
+                    <div class="col-md-6">
+                      <div class="form-row mb-1 mb-md-3">
+                        <input id="username" type="username" name="username" class="form-control form-control-lg d-block"
+                          placeholder="請輸入姓名">
+                      </div>
+                      <div class="form-row mb-1 mb-md-3">
+                        <input id="phone" type="tel" name="phone" maxlength="10" onKeyUp="value=value.replace(/[^\d]/g,'')"
+                          class="form-control form-control-lg d-block" placeholder="請輸入電話">
+                      </div>
+                      <div class="form-row mb-1 mb-md-3">
+                        <div class="d-flex">
+                          <input id="SmsVerifyCode" type="number" name="SmsVerifyCode"
+                            onKeyUp="value=value.replace(/[^\d]/g,'')" class="form-control form-control-lg d-block"
+                            placeholder="請輸入驗證碼">
+                          <button type="button" class="btn btn-block btn-secondary" id="SendSmsVerifyCodeBtn"
+                            onClick="javascript:SendSmsVerifyCode()">獲取驗證碼</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6" id="zipcode3">
+                      <div class="form-row mb-1 mb-md-3">
+                        <input id="email" type="email" name="email" class="form-control form-control-lg d-block"
+                          placeholder="請輸入電子郵件">
+                      </div>
+                      <div class="form-row mb-1 mb-md-3">
+                        <div data-role="county" class="f3 w-100 no-gutters"></div>
+                      </div>
+                      <div class="form-row mb-1 mb-md-3">
+                        <div data-role="district" class="f4 w-100 no-gutters"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-12 mx-auto">
+                    <p class="text-left policy">你所登錄的個人資料將做為以下用途<br>
+                      (一)本網站所載之相關事項通知(二)客戶管理與服務(三)本公司行銷業務之推廣本案實際內容以現場公布為準
+                    </p>
+                    <div class="form-check">
+                      <p class="text-left">
+                        <label class="form-check-label">
+                          <input id="agree" name="agree" type="checkbox" class="form-check-input">
+                          本人已知悉以上個人資料蒐集聲明事項<a href="https://www.hiyes.tw/Policy/Privacy" target="_blank">隱私權聲明</a>
+                        </label>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <a class="btn btn-block" data-name="btnSubmit"
+                      onClick="javascript:SendBooking('a0B6F00001msjkk','caesarstowers');">送出表單</a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
     </main>
 
 
     <script src="js/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <script src="js/jquery.twzipcode.min.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="js/main.js"></script>
 
-    <!-- Customized JavaScript -->
-    <!-- <script src="../resources/js/js.cookie.min.js"></script> -->
-    <!-- <script src="../resources/js/jquery-confirm.min.js"></script> -->
-    <!-- <script src="../resources/js/booking_v191223_fixed.js"></script> -->
-    <!-- <script src="../resources/js/bottombn-included.js"></script> -->
-
-    <!-- <script>
+    <script>
         $("#zipcode3").twzipcode({
             "zipcodeIntoDistrict": true,
             "css": ["city form-control form-control-lg d-block", "town form-control form-control-lg d-block"],
             "countyName": "city", // 指定城市 select name
             "districtName": "town" // 指定地區 select name
         });
-    </script> -->
+    </script>
 </body>
 
 </html>
